@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kaisei Tokumin', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.head{
+    display: flex;
+}
+
+.logo{
+    margin-left: 3.5rem;
+    margin-top: 2rem;
+}
+
+.navbar{
+    margin-top: 3.1rem;
+    margin-left: 0.3rem;
+}
+
+.navlist
+{
+    list-style-type: none; 
+    display: flex;
+    gap: 1.3rem;
+}
+
+.navlinks{
+    text-decoration: none;
+    color: black;
+}
+
+.navicons{
+    position: absolute;
+    right: 5rem;
+    margin-top: 2.6rem;
+    color: black;
+    font-size: 1.3rem;
+    word-spacing: 1.3rem;
+}
+
+#logoimage{
+    cursor: pointer;
+}
+
+.navlist li{
+    cursor: pointer;
+}
+
+.navbar li:hover{
+    color: red;
+}
+
+.navicons i{
+    cursor: pointer;
+}
+
+.navicons i:hover{
+    color: red;
+}
+
+.homepage{
+    background-image: url('./Images/home.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 30rem;
+    background-position: center 0rem;    
+}
+
+.homepage:hover{
+    background-color: rgb(0, 0, 0, 0.3);
+    color: white;
+}
+
+.home{
+    margin-top: 0.35rem;
+    height: 30rem;
+    width: 100%;
+    transition-delay: 0.1s;
+    color: white;
+}
+
+.hheading{
+    text-align: center; 
+    padding-top: 10rem;
+    transition-property: padding;
+    transition-duration: 0.5s;
+    margin-bottom: 1.2rem;
+}
+
+.home:hover{
+    background-color: rgb(0, 0, 0, 0.3);
+
+    .hheading{
+        padding-top: 5rem;
+    }
+
+    .hheadingbody{
+        color: rgb(255, 255, 255, 1);
+    }
+
+    .hheadingbtn{
+        color: rgb(0, 0, 0, 1);
+        background-color: rgb(255, 255, 255, 1);
+        margin-top: 2rem;
+    }
+
+    .hheadingbtn:hover{
+        background-color: rgb(171, 170, 170);
+    }
+}
+
+.hheading h1{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.hheadingbody{
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+    transition-property: color;
+    transition-duration: 0.5s;
+    font-size: 1.3rem;
+}
+
+.hheadingbtn{
+    display: inline-block;
+    background-color: rgb(255, 255, 255, 0);
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0);
+    font-size: 1rem;
+    padding: 1rem 4rem 1rem 4rem;
+    transition-property: all;
+    transition-duration: 0.9s;
+}
+
+.hbody1{
+    margin: 4rem 5rem 1.5rem 5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.hbody2{
+    margin: 1.5rem 5rem 5.5rem 5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.hbodyimg1, .hbodyimg2, .hbodyimg3, .hbodyimg4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hbimgtlink1, .hbimgtlink3, .hbimgtlink5, .hbimgtlink7{
+    text-decoration: none; 
+    color: black;
+}
+
+.hbimgtlink2, .hbimgtlink4, .hbimgtlink6, .hbimgtlink8{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+}
+
+.hbodyimg1:hover, .hbodyimg2:hover, .hbodyimg3:hover, .hbodyimg4:hover{
+    .hbimgtlink1, .hbimgtlink3, .hbimgtlink5, .hbimgtlink7, .hbimgtlink2, .hbimgtlink4, .hbimgtlink6, .hbimgtlink8{
+        color: red;
+    }
+}
+
+.hbimg1, .hbimg2, .hbimg3, .hbimg4{
+    overflow: hidden;
+}
+
+#img1,#img2,#img3,#img4{
+    width: 42rem;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+#img1:hover, #img2:hover, #img3:hover, #img4:hover{
+    transform: scale(1.1); 
+}
+
+.hdownimg{
+    background-image: url('./Images/img7.png');
+    background-repeat: no-repeat;
+    background-size: 100% 25rem;
+    background-position: center 0rem;  
+    height: 25rem;  
+    width: 100%;
+    text-align: center;
+}
+
+.hdownbtn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(248, 247, 247);
+    color: black;
+    font-size: 1rem;
+    margin-top: 14.7rem;
+    padding: 1rem 4rem 1rem 4rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+.hdownbtn:hover{
+    color: white;
+    background-color: black;
+}
+
+.foot{
+    background-color: rgb(235, 235, 235);
+    margin-top: 6rem;
+    display: flex;
+    padding: 3rem 5rem 0rem 5rem;
+    text-align: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.footbox1, .footbox2, .footbox3{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.fboxlinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.fboxheading{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.blinks{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.blink{
+    color: black;
+    text-decoration: none;
+}
+
+.blink:hover{
+    color: red;
+}
+
+.blinksz{
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.blinkz{
+    color: black;
+    text-decoration: none;
+}
+
+.blinkz:hover{
+    color: red;
+}
+
+.footbottom{
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+}
+
+.fbottom1{
+    padding-top: 2rem;
+    word-spacing: 2rem;
+    font-size: 2rem;
+}
+
+.fbottom2{
+    margin-top: 3rem;
+}
+
+.fbottombtn1{
+    font-size: 0.8rem;
+}
+
+.fbottomlink1{
+    text-decoration: none;
+    color: black;
+}
+
+.fbottom3{
+    padding: 1.5rem;
+}
+
+.fbottomlink1:hover{
+    color: red;
+}
+
+i{
+    color: black;
+}
+
+i:hover{
+    color: red;
+}
+
+.fbottomlink2{
+    text-decoration: none;
+    color: white;
+}
+
+.fbottom4{
+    background-color: black;
+    display: inline-block;
+    padding: 0.8rem 12rem 0.8rem 12rem;
+}
+
+.fbottom4:hover{
+    background-color: rgb(88, 88, 88);
+    cursor: pointer;
+}
